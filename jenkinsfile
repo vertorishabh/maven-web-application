@@ -15,9 +15,9 @@ pipeline {
             }
             
    stages {
-     stage('Build and Test') {
+     stage('Test') {
         steps {
-            sh 'build here...'
+            sh 'test here...'
             sh 'run tests here if you like ...'
         }
      }
