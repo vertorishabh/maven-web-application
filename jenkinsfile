@@ -10,25 +10,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/vertorishabh/maven-web-application.git'
+                git 'https://github.com/RealcoderZ/assessment.git'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             
-   stages {
-     stage('Test') {
-        steps {
-            sh 'test here...'
-            sh 'run tests here if you like ...'
         }
-     }
-   }
-   post {
-      always {
-        junit '**/reports/junit/*.xml'
-      
     }
-   }
-   }
-   }
-   }
+}
 
